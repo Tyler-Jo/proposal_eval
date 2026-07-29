@@ -1,0 +1,15 @@
+{
+  "rules": [
+    {
+      "rule_id": "BLIND_VIOLATION_COMPANY",
+      "patterns": ["\\(주\\)\\s*ABC통신", "ABC통신"],
+      "penalty_score": -0.5
+    },
+    {
+      "rule_id": "BLIND_VIOLATION_CEO",
+      "patterns": ["대표이사\\s*홍길동"],
+      "penalty_score": -0.5
+    }
+  ],
+  "whitelist_patterns": ["한국과학기술기획평가원", "주식회사 표준 예시"]
+}

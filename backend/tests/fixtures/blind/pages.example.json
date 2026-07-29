@@ -1,0 +1,29 @@
+{
+  "pages": [
+    {
+      "page": 12,
+      "regions": [
+        {
+          "text": "수행사는 (주)ABC통신이며 사업을 추진합니다.",
+          "bbox": [72, 130, 412, 156],
+          "location": "body"
+        },
+        {
+          "text": "대표이사 홍길동",
+          "bbox": [72, 690, 230, 716],
+          "location": "footer"
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "regions": [
+        {
+          "text": "발주기관: 한국과학기술기획평가원",
+          "bbox": [72, 80, 380, 104],
+          "location": "header"
+        }
+      ]
+    }
+  ]
+}

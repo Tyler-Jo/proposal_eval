@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics="">
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --p:#E65100;--pl:#FF9800;--s:#FF5722;--sd:#BF360C;
+    --p-soft:#FFF1E6;--p-soft2:#FFE7D3;--p-line:#F6D3B4;
+    --ink:#241d18;--ink2:#4b4038;--mut:#8a7d72;--mut2:#b4a89d;
+    --line:#ece5de;--line2:#f4efe9;--bg:#faf7f3;--card:#ffffff;
+    --ok:#1f9d63;--ok-soft:#e8f5ee;--warn:#c67a12;--warn-soft:#fdf1df;--bad:#c0392b;--bad-soft:#fceceb;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#e9e3dc;color:var(--ink);font-family:'Pretendard',-apple-system,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--p)}a:hover{color:var(--sd)}
+</style>
+</helmet>
+
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 46px 40px; align-items: flex-start; position: absolute; left: 82px; top: 1046px">
+
+    <!-- 01 시작 -->
+    <div id="s1" style="display:flex;flex-direction:column;gap:12px" data-om-label="01">
+      <div style="font-size:13px;font-weight:700;color:#4b4038;display:flex;align-items:center;gap:8px"><span style="width:22px;height:22px;border-radius:6px;background:var(--p);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11px">01</span>처음 시작 화면</div>
+      <div style="width:1020px;height:640px;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(120,60,10,.4);display:flex">
+        
+        <div style="width: 391px; flex: none; position: relative; background: linear-gradient(180deg, #8B7CE8, #4A39B5EB, #2A1B82); display: flex; flex-direction: column; justify-content: space-between; padding: 26px 0; height: 648px; align-items: center"><div style="color: #fff; font-weight: 600; font-size: 30px; line-height: 1.15; text-align: left; letter-spacing: .01em; filter: brightness(0) invert(1); width: 179px; height: 40px">Arvis Check</div><img src="./--ms2tzloh-a8uf.png" style="width: 382px; opacity: 0.75; filter: brightness(0) invert(1); height: 344px"></div><div style="flex:1;display:flex;flex-direction:column">
+          
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; padding: 40px; background-color: #FAF9FF">
+            <div style="width: 402px; max-width: 460px; background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 40px 40px 34px; box-shadow: 0px 20px 50px -30px #2A1B8273; display: flex; flex-direction: column; align-items: center; text-align: center; height: 360px; border-color: #BDB1FF">
+              <div style="width: 64px; height: 64px; border-radius: 18px; color: var(--p); display: flex; align-items: center; justify-content: center; margin-bottom: 22px; background-color: #E3DEFF"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke: #6A5BC9"><path d="M12 5v14M5 12h14"></path></svg></div>
+              <div style="font-size: 12.5px; font-weight: 700; letter-spacing: .06em; color: #8B7CE8; margin-bottom: 10px">WELCOME TO AVIS_CHECK</div>
+              <div style="font-size:27px;font-weight:800;letter-spacing:-.01em;line-height:1.3">첫 사업을 시작해 보세요</div>
+              <div style="font-size:14px;color:var(--mut);line-height:1.65;margin-top:12px">제안요청서를 등록하고 제안서를 올리면<br>AVIS가 정량·정성 평가를 도와드립니다.</div>
+              <a href="#s2" style="width: 100%; box-sizing: border-box; display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; margin-top: 28px; color: #fff; border-radius: 14px; font-size: 16px; font-weight: 800; text-decoration: none; background-color: #6A5BC9">사업 시작하기 <span style="font-size:20px">→</span></a>
+              <div style="display:flex;align-items:center;gap:8px;margin-top:20px;font-size:12.5px;color:var(--mut2)">
+                
+                <span style="color:var(--line)">·</span>
+                
+                <span style="color:var(--line)">·</span>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div style="padding: 52px 56px 90px; display: flex; flex-direction: column; gap: 8px; position: absolute; left: -57px; top: -118px; width: 535px; height: 55px">
+  <div style="display:flex;align-items:center;gap:14px;margin-bottom:24px">
+    <img src="./--ms2tzloh-a8uf.png" alt="Arvis_Check" style="width:40px;height:auto">
+    <div>
+      <div style="font-size:22px;font-weight:800;letter-spacing:-.01em">AVIS_check · 제안서 평가 AI 시스템</div>
+      <div style="font-size:13px;color:#6f6459">디자인 로드맵 기반 · 10개 화면 · 데스크톱 웹</div>
+    </div>
+  </div>
+
+  
+</div></div>
+
+    <!-- 02 홈(사업 목록) -->
+    <div id="s2" style="display:flex;flex-direction:column;gap:12px" data-om-label="02">
+      <div style="font-size:13px;font-weight:700;color:#4b4038;display:flex;align-items:center;gap:8px"><span style="width:22px;height:22px;border-radius:6px;background:var(--p);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11px">02</span>홈 · 사업 목록</div>
+      <div style="width:1020px;height:640px;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(120,60,10,.4);display:flex">
+        <div style="width: 95px; flex: none; position: relative; background: linear-gradient(180deg, #8B7CE8, #4A39B5EB, #2A1B82); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 26px 0; height: 646px"><img src="./--ms2tzloh-a8uf.png" style="width: 66px; opacity: 0.75; filter: brightness(0) invert(1)"><div style="color: #FFFFFFA6; font-weight: 600; font-size: 25px; line-height: 1.15; text-align: left; letter-spacing: 0.08em; filter: brightness(0) invert(1); writing-mode: vertical-rl; width: 25px; height: 165px">Arvis Check</div></div>
+        <div style="flex:1;display:flex;flex-direction:column">
+          <div style="padding: 22px 30px; border-bottom: 1px solid var(--line2); display: flex; align-items: center; gap: 10px; border-style: none"><span style="font-size:20px;font-weight:800;letter-spacing:-.01em">내 사업</span><div style="font-size: 13px; font-weight: 700; color: var(--ink2)">총 3건 진행중</div></div>
+          <div style="flex: 1; padding: 28px 32px; overflow: auto; background-color: #FAF9FF">
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px">
+              <a href="#s4" style="text-decoration: none; color: inherit; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0px 10px 26px -22px #2A1B8280; border-color: #BDB1FF"><span style="width: 40px; height: 40px; border-radius: 11px; color: var(--p); display: flex; align-items: center; justify-content: center; font-size: 18px; background-color: #E3DEFF">💻</span><div><div style="font-size:15px;font-weight:800">노트북 조립 사업</div><div style="font-size:12px;color:var(--mut);margin-top:3px">제안 5건</div></div><span style="font-size:11px;font-weight:700;color:var(--warn);background:var(--warn-soft);border-radius:16px;padding:3px 9px;align-self:flex-start">진행 중</span></a>
+              <a href="#s4" style="text-decoration: none; color: inherit; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0px 10px 26px -22px #2A1B8280; border-color: #BDB1FF"><span style="width: 40px; height: 40px; border-radius: 11px; color: var(--p); display: flex; align-items: center; justify-content: center; font-size: 18px; background-color: #E3DEFF">🛠</span><div><div style="font-size:15px;font-weight:800">유지보수 사업</div><div style="font-size:12px;color:var(--mut);margin-top:3px">제안요청서 등록 중</div></div><span style="font-size:11px;font-weight:700;color:var(--p);background:var(--p-soft);border-radius:16px;padding:3px 9px;align-self:flex-start">준비 중</span></a>
+              <a href="#s4" style="text-decoration: none; color: inherit; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0px 10px 26px -22px #2A1B8280; border-color: #BDB1FF"><span style="width: 40px; height: 40px; border-radius: 11px; color: var(--mut); display: flex; align-items: center; justify-content: center; font-size: 18px; background-color: #E3DEFF">📁</span><div><div style="font-size:15px;font-weight:800">클라우드 전환</div><div style="font-size:12px;color:var(--mut);margin-top:3px">평가 완료 · 제안 8건</div></div><span style="font-size:11px;font-weight:700;color:var(--ok);background:var(--ok-soft);border-radius:16px;padding:3px 9px;align-self:flex-start">완료</span></a>
+              <a href="#s3" style="text-decoration: none; color: var(--p); background: #fff; border: 1.5px dashed var(--p-line); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: center; min-height: 150px; border-color: #BDB1FF"><span style="width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; background-color: #E3DEFF; color: #6A5BC9">＋</span><span style="font-size: 14px; font-weight: 800; color: #6A5BC9">사업 추가</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 사업 생성 -->
+    <div id="s3" style="display:flex;flex-direction:column;gap:12px" data-om-label="03">
+      <div style="font-size:13px;font-weight:700;color:#4b4038;display:flex;align-items:center;gap:8px"><span style="width:22px;height:22px;border-radius:6px;background:var(--p);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11px">03</span>사업 생성</div>
+      <div style="width:1180px;height:720px;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(120,60,10,.4);display:flex">
+        <div style="width: 93px; flex: none; position: relative; background: linear-gradient(180deg, #8B7CE8, #4A39B5EB, #2A1B82); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 26px 0; height: 722px"><img src="./--ms2tzloh-a8uf.png" style="width: 66px; opacity: 0.75; filter: brightness(0) invert(1)"><div style="color: #FFFFFFA6; font-weight: 600; font-size: 25px; line-height: 1.15; text-align: left; letter-spacing: 0.08em; filter: brightness(0) invert(1); writing-mode: vertical-rl; width: 25px; height: 165px">Arvis Check</div></div>
+        <div style="flex:1;display:flex;flex-direction:column">
+          
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; background-color: #FAF9FF">
+            <input value="사업명을 작성하세요." style="border: none; outline: none; font: 800 24px 'Pretendard'; color: #4B4B4B; background: transparent; width: 560px; height: 83px; font-size: 30px"><div style="width:560px">
+              <div style="font-size:13px;font-weight:700;color:var(--ink2);margin-bottom:10px">제안요청서 업로드</div>
+              <label style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; border: 2px dashed var(--p-line); border-radius: 16px; background: linear-gradient(180deg, #F7F6FF, #E3DFFF); padding: 52px 20px; cursor: pointer; border-color: #BDB1FF">
+                <div style="width: 60px; height: 60px; border-radius: 16px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 30px; background-color: #E3DEFF">＋</div>
+                <div style="font-size:16px;font-weight:800">RFP 파일을 끌어다 놓거나 클릭</div>
+                <div style="font-size:12.5px;color:var(--mut)">지금 없으면 나중에 등록할 수 있어요 · PDF</div>
+              </label>
+              <div style="display:flex;justify-content:flex-end;gap:12px;margin-top:24px">
+                <a href="#s2" style="height: 46px; padding: 0 30px; display: flex; align-items: center; border: 1.5px solid var(--line); background: #fff; color: var(--ink2); border-radius: 11px; font-size: 14px; font-weight: 700; text-decoration: none; border-color: #BDB1FF">취소</a>
+                <a href="#s4" style="height: 46px; padding: 0 30px; display: flex; align-items: center; border: none; color: #fff; border-radius: 11px; font-size: 14px; font-weight: 800; text-decoration: none; background-color: #6A5BC9">다음</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05-0-MOVE-ANCHOR -->
+    
+
+    <!-- 04 제안요청서 등록 -->
+    <div id="s4" style="display:flex;flex-direction:column;gap:12px" data-om-label="04">
+      <div style="font-size:13px;font-weight:700;color:#4b4038;display:flex;align-items:center;gap:8px"><span style="width:22px;height:22px;border-radius:6px;background:var(--p);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11px">04</span>제안요청서 등록 · 평가항목 설정</div>
+      <div style="width:1180px;height:820px;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(120,60,10,.4);display:flex">
+        <div style="width: 96px; flex: none; position: relative; background: linear-gradient(180deg, #8B7CE8, #4A39B5EB, #2A1B82); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 26px 0; height: 820px"><img src="./--ms2tzloh-a8uf.png" style="width: 66px; opacity: 0.75; filter: brightness(0) invert(1)"><div style="color: #FFFFFFA6; font-weight: 600; font-size: 25px; line-height: 1.15; text-align: left; letter-spacing: 0.08em; filter: brightness(0) invert(1); writing-mode: vertical-rl; width: 25px; height: 165px">Arvis Check</div></div>
+        <div style="flex:1;display:flex;flex-direction:column;min-width:0">
+          <div style="padding:20px 34px 0"><div style="font-size:22px;font-weight:800">사업명</div></div>
+          <div style="padding: 16px 34px 18px; border-bottom: 1px solid var(--line2); border-style: none">{{ step1 }}</div>
+          <div style="flex: 1; padding: 26px 34px; overflow: auto; background-color: #FAF9FF">
+            <div style="max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:18px">
+              <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; display: flex; align-items: center; gap: 12px; border-color: #BDB1FF"><span style="width: 36px; height: 36px; border-radius: 9px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; background-color: #E3DEFF">📄</span><div style="flex:1"><div style="font-size:14px;font-weight:700">제안요청서</div><div style="font-size:12px;color:var(--mut)">RFP_노트북조립_v1.pdf · 등록됨</div></div><span style="font-size: 12px; font-weight: 700; color: #6A5BC9">보기</span></div>
+              <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; border-color: #BDB1FF">
+                <div style="font-size:14px;font-weight:800;margin-bottom:6px">필수 서류</div>
+                <div style="font-size:11.5px;color:var(--mut);margin-bottom:14px">필수 제출 서류가 등록됩니다.</div>
+                <div style="display:flex;gap:10px">
+                  <div style="flex: 1; height: 70px; border: 1.5px solid var(--line); border-radius: 11px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-color: #BDB1FF; background-color: #F7F6FF"><span style="font-size:14px;font-weight:800">사업자등록증</span><span style="font-size:11px;color:var(--mut)">예시 파일 업로드</span></div>
+                  <div style="flex: 1; height: 70px; border: 1.5px solid var(--line); border-radius: 11px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-color: #BDB1FF; background-color: #F7F6FF"><span style="font-size:14px;font-weight:800">실적증명서</span><span style="font-size:11px;color:var(--mut)">&nbsp;예시 파일 업로드</span></div>
+                  <div style="flex: 1; height: 70px; border: 1.5px solid var(--line); border-radius: 11px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-color: #BDB1FF; background-color: #F7F6FF"><span style="font-size:14px;font-weight:800">경영상태 평가표</span><span style="font-size:11px;color:var(--mut)">&nbsp;예시 파일 업로드</span></div>
+                  <div style="width: 70px; height: 70px; border: 1.5px dashed var(--p-line); border-radius: 11px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 24px; border-color: #BDB1FF; background-color: #E3DEFF">＋</div>
+                </div>
+              </div>
+              <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; border-color: #BDB1FF">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px"><div style="font-size:14px;font-weight:800">정량 평가 항목</div></div>
+                <div style="display:flex;flex-direction:column;gap:10px">
+                  <div style="display:flex;align-items:center;gap:10px"><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; border-color: #BDB1FF; background-color: #F7F6FF">체계 규격 필수 항목 1개 이상 미 충족 시 불합격 / 충족 시 24점(80%) 부여</div></div>
+                  <div style="display:flex;align-items:center;gap:10px"><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; position: relative; border-color: #BDB1FF; background-color: #F7F6FF">항목별 10% 이상 제안 시 가점 부여 (+0.3)</div></div>
+                  <div style="display:flex;align-items:center;gap:10px"><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; border-color: #BDB1FF; background-color: #F7F6FF">체계 규격 일반 항목 미충족 시 감점 처리(항목 당 - 0.5)</div></div>
+                  <button style="height: 44px; border: 1.5px dashed var(--p-line); color: #6A5BC9; border-radius: 10px; font: 700 13px 'Pretendard'; cursor: pointer; border-color: #BDB1FF; background-color: #E3DEFF">＋ 평가 항목 추가</button>
+                </div>
+              </div><div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; border-color: #BDB1FF">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px"><div style="font-size: 14px; font-weight: 800; position: relative">정성 평가 항목</div></div>
+                <div style="display:flex;flex-direction:column;gap:10px">
+                  <div style="display:flex;align-items:center;gap:10px"></div>
+                  <div style="display:flex;align-items:center;gap:10px"><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; border-color: #BDB1FF; background-color: #F7F6FF">업체수행능력</div><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; border-color: #BDB1FF; background-color: #F7F6FF">수행실적</div><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; border-color: #BDB1FF; background-color: #F7F6FF"><br><span style="background-color: transparent; color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 8pt; white-space: pre-wrap;"><span style="white-space: normal">최근 3년 내 계약목적 동일∙이상 실적(금액기준)∙공공∙민간 실적 모두 100% 인정</span></span></div></div>
+                  <div style="display:flex;align-items:center;gap:10px"><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; background-color: #FDFBF900; border-style: none"></div><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; border-color: #BDB1FF; background-color: #F7F6FF">재무구조</div><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; border-color: #BDB1FF; background-color: #F7F6FF"><span id="docs-internal-guid-7b21c5ea-7fff-2f03-2fc7-5d4568759f1e"><span style="font-size: 8pt; font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;">신용정보업자 평가 신용등급(회사채∙어음∙신용평가 등급) 적용, 유효기간 내 등급 사용</span></span></div></div>
+                  <button style="height: 44px; border: 1.5px dashed var(--p-line); color: #6A5BC9; border-radius: 10px; font: 700 13px 'Pretendard'; cursor: pointer; border-color: #BDB1FF; background-color: #E3DEFF">＋ 평가 항목 추가</button>
+                </div>
+              </div><div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; width: 808px; height: 311px; border-color: #BDB1FF">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px"></div><div style="font-size:14px;font-weight:800">법령 / 훈령 /법</div><div style="font-size:11.5px;color:var(--mut);margin-bottom:14px">제안요청서의 법 / 법령 / 훈령을 검토합니다.</div>
+                <div style="display:flex;flex-direction:column;gap:10px">
+                  <div style="display:flex;align-items:center;gap:10px"><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; border-color: #BDB1FF; background-color: #F7F6FF">⌈국가를 당사자로 하는 계약에 관한 법률⌋ 및 같은 법 시행령, 시행 규칙</div><div style="display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; font-size: 14px; background: #fff; width: 70px; justify-content: center; font-weight: 400; border-color: #BDB1FF">법령</div></div>
+                  <div style="display:flex;align-items:center;gap:10px"><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; border-color: #BDB1FF; background-color: #F7F6FF">물품적격심사 기준에 관한 훈령</div><div style="display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; font-size: 14px; background: #fff; width: 70px; justify-content: center; font-weight: 400; border-color: #BDB1FF">훈령</div></div>
+                  <div style="display:flex;align-items:center;gap:10px"><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; border-color: #BDB1FF; background-color: #F7F6FF">⌈소프트웨어진흥법⌋ 제58조</div><div style="display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; font-size: 14px; background: #fff; width: 70px; justify-content: center; font-weight: 400; border-color: #BDB1FF">법</div></div>
+                  <button style="height: 44px; border: 1.5px dashed var(--p-line); color: #6A5BC9; border-radius: 10px; font: 700 13px 'Pretendard'; cursor: pointer; border-color: #BDB1FF; background-color: #E3DEFF">＋ 평가 항목 추가</button>
+                </div>
+              </div>
+              <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; border-color: #BDB1FF">
+                <div style="font-size:14px;font-weight:800;margin-bottom:6px">별지 양식</div>
+                <div style="font-size:11.5px;color:var(--mut);margin-bottom:14px">별지를 염두하고 제안서를 검토합니다.</div>
+                <div style="display:flex;gap:10px">
+                  <div style="flex: 1; height: 70px; border: 1.5px solid var(--line); border-radius: 11px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-color: #BDB1FF; background-color: #F7F6FF"><span style="font-size:14px;font-weight:800">체계 규격</span><span style="font-size:11px;color:var(--mut)">별지 1</span></div>
+                  <div style="flex: 1; height: 70px; border: 1.5px solid var(--line); border-radius: 11px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-color: #BDB1FF; background-color: #F7F6FF"><span style="font-size:14px;font-weight:800">제조사 정품 확인서</span><span style="font-size:11px;color:var(--mut)">별지 2</span></div>
+                  <div style="flex: 1; height: 70px; border: 1.5px solid var(--line); border-radius: 11px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-color: #BDB1FF; background-color: #F7F6FF"><span style="font-size:14px;font-weight:800">제조사 공급(기술 지원) 확약서</span><span style="font-size:11px;color:var(--mut)">별지 3</span></div>
+                  <div style="width: 70px; height: 70px; border: 1.5px dashed var(--p-line); border-radius: 11px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 24px; border-color: #BDB1FF; background-color: #E3DEFF">＋</div>
+                </div>
+              </div>
+              <div style="display:flex;justify-content:flex-end;gap:12px;padding-bottom:6px"><a href="#s3" style="height: 46px; padding: 0 30px; display: flex; align-items: center; border: 1.5px solid var(--line); background: #fff; color: var(--ink2); border-radius: 11px; font-size: 14px; font-weight: 700; text-decoration: none; border-color: #BDB1FF">이전</a><a href="#s5" style="height: 46px; padding: 0 30px; display: flex; align-items: center; border: none; color: #fff; border-radius: 11px; font-size: 14px; font-weight: 800; text-decoration: none; background-color: #6A5BC9">다음</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><div id="s3b" style="display:flex;flex-direction:column;gap:12px" data-om-label="05">
+      <div style="font-size:13px;font-weight:700;color:#4b4038;display:flex;align-items:center;gap:8px"><span style="width: 26px; height: 20px; border-radius: 6px; background: var(--p); color: rgb(255, 255, 255); display: inline-flex; align-items: center; justify-content: center; font-size: 11px;">05</span>제안서 업로드 1</div>
+      <div style="width:1180px;height:720px;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(120,60,10,.4);display:flex">
+        <div style="width: 95px; flex: none; position: relative; background: linear-gradient(180deg, #8B7CE8, #4A39B5EB, #2A1B82); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 26px 0; height: 721px"><img src="./--ms2tzloh-a8uf.png" style="width: 66px; opacity: 0.75; filter: brightness(0) invert(1)"><div style="color: #FFFFFFA6; font-weight: 600; font-size: 25px; line-height: 1.15; text-align: left; letter-spacing: 0.08em; filter: brightness(0) invert(1); writing-mode: vertical-rl; width: 25px; height: 165px">Arvis Check</div></div>
+        <div style="flex:1;display:flex;flex-direction:column">
+          
+          <div style="padding:20px 34px 0"><div style="font-size:22px;font-weight:800">사업명</div></div>
+<div style="padding: 16px 34px 18px; border-bottom: 1px solid var(--line2); border-style: none">{{ step2 }}</div><div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; min-width: 0; background-color: #FAF9FF">
+            <div style="width:100%;max-width:720px">
+              <div style="font-size:12px;font-weight:700;color:var(--mut);margin-bottom:14px">제출 서류를 구분해 업로드하세요</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+                <label style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; border: 2px dashed var(--p-line); border-radius: 16px; background: linear-gradient(180deg, #F7F6FF, #E3DFFF); padding: 38px 24px; cursor: pointer; text-align: center; border-style: solid; border-color: #BDB1FF" href="#s8">
+                  <div style="width: 56px; height: 56px; border-radius: 15px; color: var(--p); display: flex; align-items: center; justify-content: center; background-color: #E3DEFF"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke: #6A5BC9"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path><path d="M12 18v-6M9 15h6"></path></svg></div>
+                  <div><div style="font-size:16px;font-weight:800;color:var(--ink)">기본 제안서</div><div style="font-size:12.5px;color:var(--mut);margin-top:4px">A권</div><div style="font-size:12.5px;color:var(--mut);margin-top:4px">.PDF 업로드</div></div>
+                  
+                </label>
+                <label style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; border: 2px dashed var(--p-line); border-radius: 16px; background: linear-gradient(180deg, #F7F6FF, #E3DFFF); padding: 38px 24px; cursor: pointer; text-align: center; border-style: solid; border-color: #BDB1FF" href="#s6">
+                  <div style="width: 56px; height: 56px; border-radius: 15px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; background-color: #E3DEFF"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6H4v14h16z"></path><path d="M4 6l0-2h6l2 2"></path><path d="M9 13h6"></path></svg></div>
+                  <div><div style="font-size:16px;font-weight:800;color:var(--ink)">제안회사 소개 · 증빙자료</div><div style="font-size:12.5px;color:var(--mut);margin-top:4px">B권</div><div style="font-size:12.5px;color:var(--mut);margin-top:4px">.PDF 업로드</div></div>
+                  
+                </label>
+              </div>
+              <div style="display:flex;justify-content:flex-end;gap:12px;margin-top:24px">
+                <a href="#s4" style="width: 120px; box-sizing: border-box; height: 46px; display: flex; align-items: center; justify-content: center; border: 1.5px solid var(--line); background: #fff; color: var(--ink2); border-radius: 11px; font-size: 14px; font-weight: 700; text-decoration: none; border-color: #BDB1FF">취소</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 제안서 업로드 -->
+    <div id="s5" style="display:flex;flex-direction:column;gap:12px" data-om-label="06">
+      <div style="font-size:13px;font-weight:700;color:#4b4038;display:flex;align-items:center;gap:8px"><span style="width: 22px; height: 22px; border-radius: 6px; background: var(--p); color: rgb(255, 255, 255); display: inline-flex; align-items: center; justify-content: center; font-size: 11px;">06</span>제안서 업로드 2(B권(정량적평가))</div>
+      <div style="width:1180px;height:720px;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(120,60,10,.4);display:flex">
+        <div style="width: 95px; flex: none; position: relative; background: linear-gradient(180deg, #8B7CE8, #4A39B5EB, #2A1B82); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 26px 0; height: 721px"><img src="./--ms2tzloh-a8uf.png" style="width: 66px; opacity: 0.75; filter: brightness(0) invert(1)"><div style="color: #FFFFFFA6; font-weight: 600; font-size: 25px; line-height: 1.15; text-align: left; letter-spacing: 0.08em; filter: brightness(0) invert(1); writing-mode: vertical-rl; width: 25px; height: 165px">Arvis Check</div></div>
+        <div style="flex:1;display:flex;flex-direction:column;min-width:0">
+          <div style="padding:20px 34px 0"><div style="font-size:22px;font-weight:800">사업명</div></div>
+          <div style="padding: 16px 34px 18px; border-bottom: 1px solid var(--line2); border-style: none">{{ step2 }}</div>
+          <div style="flex: 1; padding: 30px 34px; overflow: auto; position: relative; background-color: #FAF9FF">
+            <div style="max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; position: relative">
+              
+              <span style="font-size: 16px; color: #575757; font-weight: 700">제안회사 소개 · 증빙자료(B권)</span><label style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border: 2px dashed var(--p-line); border-radius: 16px; background: linear-gradient(180deg, #F7F6FF, #E3DFFF); padding: 34px 20px; cursor: pointer; border-color: #BDB1FF"><div style="width: 54px; height: 54px; border-radius: 14px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 26px; background-color: #E3DEFF">＋</div><div style="font-size:15px;font-weight:800">제안서 파일을 끌어다 놓거나 클릭해 여러 건 추가</div><div style="font-size:12.5px;color:var(--mut)">PDF 각 300MB 이내</div></label><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px">
+                <div style="background: #fff; border: 1px solid var(--line); border-radius: 13px; padding: 16px; display: flex; flex-direction: column; gap: 10px; border-color: #BDB1FF"><div style="display:flex;align-items:center;justify-content:space-between"><span style="width: 34px; height: 34px; border-radius: 8px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 800; background-color: #E3DEFF">PDF</span><span style="font-size:11px;font-weight:700;color:var(--ok);background:var(--ok-soft);border-radius:14px;padding:3px 9px">완료</span></div><div><div style="font-size:13.5px;font-weight:700">제안서 1</div><div style="font-size:11px;color:var(--mut)">㈜에이스시스템 · 38쪽</div></div></div>
+                <div style="background: #fff; border: 1px solid var(--line); border-radius: 13px; padding: 16px; display: flex; flex-direction: column; gap: 10px; border-color: #BDB1FF"><div style="display:flex;align-items:center;justify-content:space-between"><span style="width: 34px; height: 34px; border-radius: 8px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 800; background-color: #E3DEFF">PDF</span><span style="font-size:11px;font-weight:700;color:var(--ok);background:var(--ok-soft);border-radius:14px;padding:3px 9px">완료</span></div><div><div style="font-size:13.5px;font-weight:700">제안서 2</div><div style="font-size:11px;color:var(--mut)">㈜블루칩테크 · 41쪽</div></div></div>
+                <div style="background: #fff; border: 1px solid var(--line); border-radius: 13px; padding: 16px; display: flex; flex-direction: column; gap: 10px; border-color: #BDB1FF"><div style="display:flex;align-items:center;justify-content:space-between"><span style="width: 34px; height: 34px; border-radius: 8px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 800; background-color: #E3DEFF">PDF</span><span style="font-size:11px;font-weight:700;color:var(--warn);background:var(--warn-soft);border-radius:14px;padding:3px 9px">72%</span></div><div><div style="font-size:13.5px;font-weight:700">제안서 3</div><div style="font-size:11px;color:var(--mut)">대한정보기술 · 업로드 중</div></div></div>
+              </div>
+              <div style="display: flex; align-items: center; padding-bottom: 6px; position: relative"><div style="margin-left:auto;display:flex;gap:12px"><a href="#s5" style="height: 46px; padding: 0 30px; display: flex; align-items: center; border: 1.5px solid var(--line); background: #fff; color: var(--ink2); border-radius: 11px; font-size: 14px; font-weight: 700; text-decoration: none; border-color: #BDB1FF">이전</a><a href="#s8" style="height: 46px; padding: 0 30px; display: flex; align-items: center; border: none; color: #FFFFFF; border-radius: 11px; font-size: 14px; font-weight: 800; text-decoration: none; background-color: #8B7CE8">기본제안서 업로드 →</a><a href="#s7" style="height: 46px; padding: 0 30px; display: flex; align-items: center; border: none; color: #fff; border-radius: 11px; font-size: 14px; font-weight: 800; text-decoration: none; background-color: #4A39B5">평가 시작 →</a><a href="#s10" style="height: 45px; padding: 0 26px; display: flex; align-items: center; border: none; color: #fff; border-radius: 11px; font-size: 14px; font-weight: 800; text-decoration: none; width: 124px; background-color: #2A1B82">결과 보기 →</a></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><div id="s9" style="display:flex;flex-direction:column;gap:12px" data-om-label="07">
+      <div style="font-size:13px;font-weight:700;color:#4b4038;display:flex;align-items:center;gap:8px"><span style="width:22px;height:22px;border-radius:6px;background:var(--p);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11px">07</span>정량적 평가 요소 피드백</div>
+      <div style="width:1180px;height:760px;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(120,60,10,.4);display:flex">
+        <div style="width: 95px; flex: none; position: relative; background: linear-gradient(180deg, #8B7CE8, #4A39B5EB, #2A1B82); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 26px 0; height: 760px"><img src="./--ms2tzloh-a8uf.png" style="width: 66px; opacity: 0.75; filter: brightness(0) invert(1)"><div style="color: #FFFFFFA6; font-weight: 600; font-size: 25px; line-height: 1.15; text-align: left; letter-spacing: 0.08em; filter: brightness(0) invert(1); writing-mode: vertical-rl; width: 25px; height: 165px">Arvis Check</div></div>
+        <div style="flex:1;display:flex;flex-direction:column;min-width:0">
+          <div style="padding:20px 34px 0"><div style="font-size:22px;font-weight:800">사업명</div></div>
+          <div style="padding: 16px 34px 18px; border-bottom: 1px solid var(--line2); border-style: none">{{ step3 }}</div>
+          <div style="flex: 1; padding: 24px 34px; overflow: hidden; display: grid; grid-template-columns: 1fr 400px; gap: 20px; background-color: #FAF9FF">
+            <!-- doc preview with highlight -->
+            <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 26px 30px; overflow: hidden; width: 589px; height: 334px; border-color: #BDB1FF">
+              <div style="font-size:12px;color:var(--mut);margin-bottom:14px">제안서 1 · ㈜에이스시스템 · 원본</div>
+              <div style="font-size:14px;font-weight:800;margin-bottom:16px">Ⅲ. 사업 수행 계획</div>
+              <div style="font-size:12.5px;line-height:1.9;color:var(--ink2)">
+                본 사업은 총 12주에 걸쳐 노트북 500대를 조립·납품하며,<br>
+                <span style="font-weight: 700; background: linear-gradient(transparent 55%, rgba(189, 234, 210, 0.92));">주당 42대 조립 능력을 보유한 자체 라인 2개를 운영</span>한다.<br>
+                <span style="background: linear-gradient(transparent 55%, rgb(255, 199, 188) 55%); font-weight: 700;">품질 검사 인력은 3명으로 RFP 기준(5명)에 미달</span>하여<br>
+                해당 항목에서 감점이 발생하였다. 납기 준수율은 최근<br>
+                3개년 평균 <span style="background: linear-gradient(transparent 55%, rgba(189, 234, 210, 0.92)); font-weight: 700;">98.2%로 우수 등급</span>에 해당한다.
+              <br><br>좌측 : B권 제안서 표시 &amp; 하이라이팅 / 우측 : 해당 정량적 평가항목(제안요청서) 표시</div>
+              <div style="display:flex;gap:14px;margin-top:22px;font-size:11.5px"><span style="display:flex;align-items:center;gap:6px;color:var(--ink2)"><span style="width: 14px; height: 14px; border-radius: 4px; background-color: #BDEAD2"></span>가점 근거</span><span style="display:flex;align-items:center;gap:6px;color:var(--ink2)"><span style="width: 14px; height: 14px; border-radius: 4px; background-color: #FFC7BC"></span>감점 근거</span></div>
+            </div>
+            <!-- score sidebar -->
+            <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; width: 393px; height: 333px; gap: 12px; border-color: #BDB1FF">
+              <div style="font-size: 12px; font-weight: 700; color: #6A5BC9; border-radius: 16px; padding: 4px 11px; align-self: flex-start; background-color: #F7F6FF">정량적 평가</div>
+              
+              
+              <div style="flex: 1; display: flex; align-items: center; height: 80px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; width: 345px; background-color: #E8F5EE; border-color: #45D794">체계 규격 필수 항목 1개 이상 충족</div>
+
+
+
+              <div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; position: relative; background-color: #E8F5EE; border-color: #45D794">항목별 10% 이상 제안</div><div style="flex: 1; display: flex; align-items: center; height: 44px; border: 1.5px solid var(--line); border-radius: 10px; padding: 0 14px; font-size: 13.5px; background-color: #FCECEB; border-color: #E4C9C4">체계 규격 일반 항목 미충족</div><div style="margin-top: auto; padding-top: 20px; width: 347px; height: 74px"></div>
+            </div><div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; width: 591px; height: 261px; border-color: #BDB1FF">
+              <div style="font-size: 12px; font-weight: 700; color: #6A5BC9; border-radius: 16px; padding: 4px 11px; align-self: flex-start; background-color: #F7F6FF">정량적 평가</div>
+              <div style="display:flex;align-items:flex-end;gap:4px;margin:14px 0 4px"><span style="font-size: 42px; font-weight: 800; line-height: 1; color: #6A5BC9">24.1</span><span style="font-size:16px;color:var(--mut);margin-bottom:6px">/ 30점</span></div>
+              
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div><div style="display:flex;justify-content:space-between;font-size:12.5px;font-weight:700;margin-bottom:5px"><span>법/법령/훈령 준수</span><span style="color:var(--ok)">100%</span></div><div style="height:6px;border-radius:4px;background:var(--line2);overflow:hidden"><div style="height: 16px; width: 548px; border-radius: 4px; background-color: #1F9D76"></div></div></div><div><div style="display:flex;justify-content:space-between;font-size:12.5px;font-weight:700;margin-bottom:5px"><span>체계 규격 필수항목 충족</span><span style="color:var(--ok)">+24</span></div><div style="height:6px;border-radius:4px;background:var(--line2);overflow:hidden"><div style="height: 16px; width: 548px; border-radius: 4px; background-color: #1F9D76"></div></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:12.5px;font-weight:700;margin-bottom:5px"><span>항목별 10%이상 제안(2건)</span><span style="color: #1F9D63">+0.6</span></div><div style="height: 6px; border-radius: 4px; overflow: hidden; background-color: #F7F6FF"><div style="height: 8px; width: 273px; border-radius: 4px; background-color: #1F9D76"></div></div></div><div><div style="display:flex;justify-content:space-between;font-size:12.5px;font-weight:700;margin-bottom:5px"><span>체계 규격 일반항목 미충족(1건)</span><span style="color:var(--bad)">-0.5</span></div><div style="height: 6px; border-radius: 4px; overflow: hidden; background-color: #F7F6FF"><div style="height: 100%; width: 40%; border-radius: 4px; background-color: #C02B2B"></div></div></div>
+                
+              </div><div style="display:flex;flex-direction:column;gap:12px">
+                
+                
+                
+              </div>
+              
+            </div><div style="border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; width: 378px; height: 234px; background-color: #FFFFFF00; border-style: none; gap: 12px">
+              
+              <div style="display:flex;align-items:flex-end;gap:4px;margin:14px 0 4px"></div>
+              
+              <div style="display:flex;flex-direction:column;gap:12px">
+                
+                
+                
+              </div>
+              <a href="#s6" style="display: flex; align-items: center; justify-content: center; height: 44px; border: 1.5px solid var(--sd); color: #2A1B82; border-radius: 11px; font-size: 13.5px; font-weight: 800; text-decoration: none; border-color: #2A1B82">이전</a><a href="#s8" style="display: flex; align-items: center; justify-content: center; height: 44px; border: 1.5px solid var(--sd); color: #2A1B82; border-radius: 11px; font-size: 13.5px; font-weight: 800; text-decoration: none; border-color: #2A1B82">정성적 평가 보기 →</a><a href="#s10" style="display: flex; align-items: center; justify-content: center; height: 44px; color: #fff; border-radius: 11px; font-size: 13.5px; font-weight: 800; text-decoration: none; background-color: #2A1B82">결과 보기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><div id="s5" style="display:flex;flex-direction:column;gap:12px" data-om-label="08">
+      <div style="font-size:13px;font-weight:700;color:#4b4038;display:flex;align-items:center;gap:8px"><span style="width: 22px; height: 22px; border-radius: 6px; background: var(--p); color: rgb(255, 255, 255); display: inline-flex; align-items: center; justify-content: center; font-size: 11px;">08<br></span>제안서 업로드 3(A권(정성적 평가))</div>
+      <div style="width:1180px;height:720px;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(120,60,10,.4);display:flex">
+        <div style="width: 95px; flex: none; position: relative; background: linear-gradient(180deg, #8B7CE8, #4A39B5EB, #2A1B82); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 26px 0; height: 721px"><img src="./--ms2tzloh-a8uf.png" style="width: 66px; opacity: 0.75; filter: brightness(0) invert(1)"><div style="color: #FFFFFFA6; font-weight: 600; font-size: 25px; line-height: 1.15; text-align: left; letter-spacing: 0.08em; filter: brightness(0) invert(1); writing-mode: vertical-rl; width: 25px; height: 165px">Arvis Check</div></div>
+        <div style="flex:1;display:flex;flex-direction:column;min-width:0">
+          <div style="padding:20px 34px 0"><div style="font-size:22px;font-weight:800">사업명</div></div>
+          <div style="padding: 16px 34px 18px; border-bottom: 1px solid var(--line2); border-style: none">{{ step2 }}</div>
+          <div style="flex: 1; padding: 30px 34px; overflow: auto; position: relative; background-color: #FAF9FF">
+            <div style="max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; position: relative">
+              
+              <span style="font-size: 16px; color: #575757; font-weight: 700">기본 제안서(A권)</span><label style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border: 2px dashed var(--p-line); border-radius: 16px; background: linear-gradient(180deg, #F7F6FF, #E3DFFF); padding: 34px 20px; cursor: pointer; border-color: #BDB1FF"><div style="width: 54px; height: 54px; border-radius: 14px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 26px; background-color: #E3DEFF">＋</div><div style="font-size:15px;font-weight:800">제안서 파일을 끌어다 놓거나 클릭해 여러 건 추가</div><div style="font-size:12.5px;color:var(--mut)">PDF 각 300MB 이내</div></label><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px">
+                <div style="background: #fff; border: 1px solid var(--line); border-radius: 13px; padding: 16px; display: flex; flex-direction: column; gap: 10px; border-color: #BDB1FF"><div style="display:flex;align-items:center;justify-content:space-between"><span style="width: 34px; height: 34px; border-radius: 8px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 800; background-color: #E3DEFF">PDF</span><span style="font-size:11px;font-weight:700;color:var(--ok);background:var(--ok-soft);border-radius:14px;padding:3px 9px">완료</span></div><div><div style="font-size:13.5px;font-weight:700">제안서 1</div><div style="font-size:11px;color:var(--mut)">㈜에이스시스템 · 38쪽</div></div></div>
+                <div style="background: #fff; border: 1px solid var(--line); border-radius: 13px; padding: 16px; display: flex; flex-direction: column; gap: 10px; border-color: #BDB1FF"><div style="display:flex;align-items:center;justify-content:space-between"><span style="width: 34px; height: 34px; border-radius: 8px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 800; background-color: #E3DEFF">PDF</span><span style="font-size:11px;font-weight:700;color:var(--ok);background:var(--ok-soft);border-radius:14px;padding:3px 9px">완료</span></div><div><div style="font-size:13.5px;font-weight:700">제안서 2</div><div style="font-size:11px;color:var(--mut)">㈜블루칩테크 · 41쪽</div></div></div>
+                <div style="background: #fff; border: 1px solid var(--line); border-radius: 13px; padding: 16px; display: flex; flex-direction: column; gap: 10px; border-color: #BDB1FF"><div style="display:flex;align-items:center;justify-content:space-between"><span style="width: 34px; height: 34px; border-radius: 8px; color: #6A5BC9; display: flex; align-items: center; justify-content: center; font-size: 9px; font-weight: 800; background-color: #E3DEFF">PDF</span><span style="font-size:11px;font-weight:700;color:var(--warn);background:var(--warn-soft);border-radius:14px;padding:3px 9px">72%</span></div><div><div style="font-size:13.5px;font-weight:700">제안서 3</div><div style="font-size:11px;color:var(--mut)">대한정보기술 · 업로드 중</div></div></div>
+              </div>
+              <div style="display: flex; align-items: center; padding-bottom: 6px; position: relative"><div style="margin-left:auto;display:flex;gap:12px"><a href="#s5" style="height: 46px; padding: 0 30px; display: flex; align-items: center; border: 1.5px solid var(--line); background: #fff; color: var(--ink2); border-radius: 11px; font-size: 14px; font-weight: 700; text-decoration: none; border-color: #BDB1FF">이전</a><a href="#s6" style="height: 46px; padding: 0 30px; display: flex; align-items: center; border: none; color: #FFFFFF; border-radius: 11px; font-size: 14px; font-weight: 800; text-decoration: none; background-color: #8B7CE8">제안회사 소개 · 증빙자료 업로드 →</a><a href="#s9" style="height: 46px; padding: 0 30px; display: flex; align-items: center; border: none; color: #fff; border-radius: 11px; font-size: 14px; font-weight: 800; text-decoration: none; background-color: #4A39B5">평가 시작 →</a><a href="#s10" style="height: 46px; padding: 0 26px; display: flex; align-items: center; border: none; color: #fff; border-radius: 11px; font-size: 14px; font-weight: 800; text-decoration: none; width: 124px; background-color: #2A1B82">결과 보기 →</a></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><div id="s10" style="display:flex;flex-direction:column;gap:12px" data-om-label="09">
+      <div style="font-size:13px;font-weight:700;color:#4b4038;display:flex;align-items:center;gap:8px"><span style="width:22px;height:22px;border-radius:6px;background:var(--p);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11px">09</span>정성적 평가 요소 피드백</div>
+      <div style="width:1180px;height:760px;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(120,60,10,.4);display:flex">
+        <div style="width: 95px; flex: none; position: relative; background: linear-gradient(180deg, #8B7CE8, #4A39B5EB, #2A1B82); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 26px 0; height: 758px"><img src="./--ms2tzloh-a8uf.png" style="width: 66px; opacity: 0.75; filter: brightness(0) invert(1)"><div style="color: #FFFFFFA6; font-weight: 600; font-size: 25px; line-height: 1.15; text-align: left; letter-spacing: 0.08em; filter: brightness(0) invert(1); writing-mode: vertical-rl; width: 25px; height: 165px">Arvis Check</div></div>
+        <div style="flex:1;display:flex;flex-direction:column;min-width:0">
+          <div style="padding:20px 34px 0"><div style="font-size:22px;font-weight:800">사업명</div></div>
+          <div style="padding: 16px 34px 18px; border-bottom: 1px solid var(--line2); border-style: none">{{ step3 }}</div>
+          <div style="flex: 1; padding: 24px 34px; overflow: hidden; display: grid; grid-template-columns: 1fr 400px; gap: 20px; background-color: #FAF9FF">
+            <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 26px 30px; overflow: hidden; box-shadow: 0px 10px 26px -22px #2A1B8280; border-color: #BDB1FF">
+              <div style="font-size:12px;color:var(--mut);margin-bottom:14px">제안서 1 · ㈜에이스시스템 · 원본</div>
+              <div style="font-size:14px;font-weight:800;margin-bottom:16px">Ⅳ. 수행 전략 및 창의성</div>
+              <div style="font-size:12.5px;line-height:1.9;color:var(--ink2)">
+                기존 조립 공정에 <span style="background: linear-gradient(transparent 55%, rgba(189, 234, 210, 0.92)); font-weight: 700;">AI 기반 불량 예측 검사를 도입</span>하여<br>
+                초기 불량률을 30% 절감하는 방안을 제시하였다. 다만<br>
+                <span style="background: linear-gradient(transparent 55%, rgba(255, 199, 188, 0.92)); font-weight: 700;">제시된 일정과 인력 계획 간 정합성 근거가 부족</span>하여<br>
+                실행 가능성 측면에서 보완이 필요하다. 사후 관리 방안은<br>
+                구체성이 다소 미흡하다.
+              <br><br>좌측 : A권 제안서 표시 &amp; 하이라이팅 / 우측 : 정성적 평가항목 기준 AI 피드백</div><div style="display:flex;gap:14px;margin-top:22px;font-size:11.5px"><span style="display:flex;align-items:center;gap:6px;color:var(--ink2)"><span style="width: 14px; height: 14px; border-radius: 4px; background-color: #BDEAD2"></span>강점</span><span style="display:flex;align-items:center;gap:6px;color:var(--ink2)"><span style="width: 14px; height: 14px; border-radius: 4px; background-color: rgb(255, 199, 188);"></span>약점&nbsp;</span></div>
+            </div>
+            <div style="background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 22px; box-shadow: 0px 10px 26px -22px #2A1B8280; display: flex; flex-direction: column; gap: 12px; border-color: #BDB1FF">
+              <div style="font-size: 12px; font-weight: 700; color: #6A5BC9; border-radius: 16px; padding: 4px 11px; align-self: flex-start; background-color: #E3DEFF">정성적 평가</div>
+              
+              <div style="font-size: 12px; color: var(--mut); margin-bottom: 16px">수행 전략·창의성 · AI 코멘트</div>
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div style="border: 1px solid var(--ok); border-radius: 11px; padding: 12px 14px; border-color: #45D794; background-color: #E8F5EE"><div style="font-size:11.5px;font-weight:800;color:var(--ok);margin-bottom:4px">강점</div><div style="font-size:12.5px;line-height:1.55;color:var(--ink2)">AI 불량 예측 검사 도입 등 공정 혁신 아이디어가 구체적이고 차별성이 높음</div></div>
+                <div style="border: 1px solid #e4c9c4; border-radius: 11px; padding: 12px 14px; background-color: #FCECEB"><div style="font-size:11.5px;font-weight:800;color:var(--bad);margin-bottom:4px">약점</div><div style="font-size:12.5px;line-height:1.55;color:var(--ink2)">일정–인력 정합성 근거가 부족하고 사후 관리 방안의 구체성이 미흡함</div></div><div style="border: 1px solid #e4c9c4; border-radius: 11px; padding: 12px 14px; background-color: #FCF4EB"><div style="font-size: 11.5px; font-weight: 800; color: #E65100; margin-bottom: 4px">종합의견</div><div style="font-size:12.5px;line-height:1.55;color:var(--ink2)">타 업체와의 차별성이 높으나 상호운용성 측면에서 부족합니다.</div></div>
+              </div>
+              <div style="margin-top: auto; border: 1px solid var(--line); border-radius: 14px; display: flex; flex-direction: column; width: 354px; height: 154px; background-color: #FFFFFF00; border-style: none; gap: 12px"><a href="#s8" style="display: flex; align-items: center; height: 44px; color: #2A1B82; border-radius: 11px; font-size: 13.5px; font-weight: 800; text-decoration: none; border: 1.5px solid var(--sd); justify-content: center; border-color: #2A1B82">이전</a><a href="#s6" style="display: flex; align-items: center; justify-content: center; height: 44px; color: #2A1B82; border-radius: 11px; font-size: 13.5px; font-weight: 800; text-decoration: none; border: 1.5px solid var(--sd); border-color: #2A1B82">정량적 평가 보기 →</a><a href="#s10" style="display: flex; align-items: center; justify-content: center; height: 44px; color: #fff; border-radius: 11px; font-size: 13.5px; font-weight: 800; text-decoration: none; background-color: #2A1B82">결과 보기</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06 평가(AI 채팅 시작) -->
+    
+
+    <!-- 07 채팅 피드백(비교) -->
+    
+
+    <!-- 08 완료 · 순위 -->
+    <div id="s8" style="display:flex;flex-direction:column;gap:12px" data-om-label="10">
+      <div style="font-size:13px;font-weight:700;color:#4b4038;display:flex;align-items:center;gap:8px"><span style="width:22px;height:22px;border-radius:6px;background:var(--p);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:11px">10</span>완료 · 결과 순위</div>
+      <div style="width:1180px;height:760px;background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 24px 60px -28px rgba(120,60,10,.4);display:flex">
+        <div style="width: 98px; flex: none; position: relative; background: linear-gradient(180deg, #8B7CE8, #4A39B5EB, #2A1B82); display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 26px 0; height: 761px"><img src="./--ms2tzloh-a8uf.png" style="width: 66px; opacity: 0.75; filter: brightness(0) invert(1)"><div style="color: #FFFFFFA6; font-weight: 600; font-size: 25px; line-height: 1.15; text-align: left; letter-spacing: 0.08em; filter: brightness(0) invert(1); writing-mode: vertical-rl; width: 25px; height: 165px">Arvis Check</div></div>
+        <div style="flex:1;display:flex;flex-direction:column;min-width:0">
+          <div style="padding:20px 34px 0"><div style="font-size:22px;font-weight:800">사업명</div></div>
+          <div style="padding: 16px 34px 18px; border-bottom: 1px solid var(--line2); border-style: none">{{ step4 }}</div>
+          <div style="flex: 1; padding: 26px 34px; overflow: auto; background-color: #FAF9FF">
+            <div style="display:flex;align-items:center;margin-bottom:18px"><h2 style="margin:0;font-size:18px;font-weight:800">채점 결과</h2><span style="font-size:12.5px;color:var(--mut);margin-left:10px">3건 · 평균 92.7점 · 카드 클릭 시 항목별 피드백</span></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px">
+              <sc-for list="{{ proposals }}" as="p" hint-placeholder-count="3">
+                <a href="{{ p.href }}" style="text-decoration:none;color:inherit;background:#fff;border:1px solid {{ p.bar }};border-top:3px solid {{ p.bar }};border-radius:14px;padding:18px;box-shadow:0 10px 26px -22px rgba(120,60,10,.5);display:flex;flex-direction:column;gap:12px">
+                  <div style="display:flex;align-items:center;justify-content:space-between"><span style="display: flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 8px; font-size: 13px; font-weight: 800; color: var(--ink2); background-color: #F7F6FF">{{ p.rank }}</span><span style="font-size:11.5px;font-weight:700;color:{{ p.color }};background:{{ p.soft }};border-radius:16px;padding:3px 10px">{{ p.grade }}</span></div>
+                  <div><div style="font-size:15px;font-weight:800">{{ p.name }}</div><div style="font-size:11.5px;color:var(--mut);margin-top:2px">{{ p.company }}</div></div>
+                  
+                  <div style="display:flex;gap:6px"><span style="flex: 1; font-size: 15px; text-align: center; font-weight: 700; color: #6A5BC9; border-radius: 8px; padding: 6px 4px; background-color: #E3DEFF; width: 134px; height: 52px" href="#s7">정량(점수/30)</span><span style="flex: 1; font-size: 15px; text-align: center; font-weight: 700; color: #6A5BC9; border-radius: 8px; padding: 6px 4px; background-color: #E3DEFF" href="#s9">정성</span></div>
+                  
+                </a>
+              </sc-for>
+            </div>
+            <div style="display:flex;justify-content:flex-end;gap:12px;margin-top:22px"><a href="#s5" style="height: 46px; padding: 0 28px; display: flex; align-items: center; border: 1.5px solid var(--line); background: #fff; color: var(--ink2); border-radius: 11px; font-size: 14px; font-weight: 700; text-decoration: none; border-color: #BDB1FF">이전</a><a href="#s2" style="height: 46px; padding: 0 28px; display: flex; align-items: center; border: none; color: #fff; border-radius: 11px; font-size: 14px; font-weight: 800; text-decoration: none; background-color: #2A1B82">리포트 내보내기</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 09 정량적 평가 피드백 -->
+    
+
+    <!-- 10 정성적 평가 피드백 -->
+    
+
+  </div></x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  stepper(active) {
+    const steps = ["제안요청서 등록", "제안서 업로드", "평가 / 피드백", "완료"];
+    const dot = (i) => {
+      const done = i < active, on = i === active;
+      const bg = done ? "#1f9d63" : on ? "#E65100" : "#fff";
+      const fg = (done || on) ? "#fff" : "#b4a89d";
+      const bd = (done || on) ? "none" : "1.5px solid #d7ccc2";
+      return React.createElement("span", {style:{width:"24px",height:"24px",borderRadius:"50%",flex:"none",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"12px",fontWeight:800,background:bg,color:fg,border:bd}}, done ? "✓" : String(i+1));
+    };
+    const kids = [];
+    steps.forEach((label, i) => {
+      const on = i <= active;
+      kids.push(React.createElement("div", {key:"s"+i, style:{display:"flex",alignItems:"center",gap:"8px"}},
+        this.dot ? this.dot(i) : dot(i),
+        React.createElement("span", {style:{fontSize:"13px",fontWeight: i===active?800:600,color: on?"#241d18":"#b4a89d",whiteSpace:"nowrap"}}, label)
+      ));
+      if (i < steps.length-1) kids.push(React.createElement("span",{key:"l"+i,style:{flex:1,height:"2px",background: i<active?"#1f9d63":"#ece5de",margin:"0 14px",minWidth:"22px"}}));
+    });
+    return React.createElement("div",{style:{display:"flex",alignItems:"center",maxWidth:"820px"}}, kids);
+  }
+  renderVals() {
+    const raw = [
+      {name:"제안서 2", company:"㈜블루칩테크", score:"98", quant:"64", qual:"27", href:"#s9"},
+      {name:"제안서 1", company:"㈜에이스시스템", score:"92", quant:"45", qual:"15", href:"#s9"},
+      {name:"제안서 3", company:"대한정보기술", score:"88", quant:"60", qual:"22", href:"#s9"},
+    ];
+    const grade = (s) => s>=95?{grade:"합격",color:"#1f9d63",soft:"#e8f5ee",bar:"#1f9d63"}
+      : s>=85?{grade:"합격권",color:"#E65100",soft:"#FFF1E6",bar:"#E65100"}
+      : s>=70?{grade:"보류",color:"#c67a12",soft:"#fdf1df",bar:"#FF9800"}
+      : {grade:"탈락 위험",color:"#c0392b",soft:"#fceceb",bar:"#c0392b"};
+    const proposals = raw.map((r,i)=>({...r,...grade(+r.score),pct:r.score+"%",rank:"#"+(i+1)}));
+    return {
+      step1: this.stepper(0), step2: this.stepper(1), step3: this.stepper(2), step4: this.stepper(3),
+      proposals
+    };
+  }
+}
+</script>
+</body>
+</html>

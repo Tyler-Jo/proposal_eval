@@ -1,0 +1,44 @@
+# Node / Vite
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Tauri / Rust build outputs
+src-tauri/target/
+src-tauri/gen/
+
+# Python virtual environments, caches, test outputs
+backend/.venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+backend/tests/results/
+backend/tests/fixtures/private/
+
+# On-device models and runtime artifacts
+backend/model/
+
+# Local inputs: uploaded proposals and original RFP files must not be committed
+uploads/
+docs/*.pdf
+docs/*.docx
+docs/.~lock.*
+sample/
+# Local configuration and operating-system files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.thumbnail
+*.log

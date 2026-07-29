@@ -1,0 +1,3 @@
+# POC 입력 원본과 실행 산출물은 저장소에 포함하지 않는다.
+tests/results/
+tests/fixtures/private/

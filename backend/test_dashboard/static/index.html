@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proposal Evaluation · Test Dashboard</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <p class="eyebrow">LOCAL · OFFLINE · POC</p>
+        <h1>Test Dashboard</h1>
+        <p>PDF 청크·메모리와 블라인드 탐지 POC를 실행하고 결과를 검토합니다.</p>
+      </div>
+      <button id="refresh-button" class="secondary">결과 새로고침</button>
+    </header>
+
+    <main>
+      <section class="run-panel">
+        <div class="section-heading"><span>01</span><div><h2>PDF 청크 · 메모리 POC</h2><p>30/50페이지 청크의 렌더링 시간과 RSS를 측정합니다.</p></div></div>
+        <div class="controls">
+          <label>PDF <select id="test-01-pdf"></select></label>
+          <label>청크 크기 <input id="chunk-sizes" value="30,50" /></label>
+          <label>반복 <input id="repeat" type="number" min="1" value="1" /></label>
+          <button data-test="test_01">Test 01 실행</button>
+        </div>
+      </section>
+
+      <section class="run-panel">
+        <div class="section-heading"><span>02</span><div><h2>블라인드 위반 POC</h2><p>PDF 텍스트 레이어에서 회사명·대표자명 후보와 bbox를 생성합니다.</p></div></div>
+        <div class="controls">
+          <label>PDF <select id="test-02-pdf"></select></label>
+          <button data-test="test_02">Test 02 실행</button>
+        </div>
+      </section>
+
+      <p id="job-status" class="job-status" aria-live="polite"></p>
+
+      <section class="results-layout">
+        <aside>
+          <div class="result-heading"><h2>실행 이력</h2><span id="run-count"></span></div>
+          <div id="run-list" class="run-list"></div>
+        </aside>
+        <section id="details" class="details empty"><p>왼쪽에서 실행 결과를 선택하세요.</p></section>
+      </section>
+    </main>
+    <template id="run-template">
+      <button class="run-item">
+        <strong></strong><span class="run-meta"></span><span class="run-summary"></span>
+      </button>
+    </template>
+    <script src="/app.js"></script>
+  </body>
+</html>

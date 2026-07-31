@@ -19,3 +19,14 @@ def test_10_rfp_analysis_returns_reviewable_requirement_payload(tmp_path) -> Non
     assert result["requirements"][0]["importance"] == "required"
     assert result["requirements"][0]["evidence"]["page"] == 1
     assert "검토 필요" in result["notice"]
+
+
+def test_rfp_analysis_reuses_sqlite_result(tmp_path, monkeypatch) -> None:
+    path = tmp_path / "rfp.pdf"
+    document = fitz.open(); page = document.new_page(); page.insert_text((40, 40), "Item Category Spec Qty\n** 16GB minimum"); document.save(path); document.close()
+    monkeypatch.setenv("PROPOSAL_EVALUATION_DATA_DIR", str(tmp_path / "app-data"))
+
+    _analyze_rfp(str(path))
+    result = _analyze_rfp(str(path))
+
+    assert result["cache_hit"] is True

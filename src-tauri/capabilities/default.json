@@ -1,7 +1,7 @@
 {
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "main-capability",
-  "description": "AVIS Check main window permissions",
+  "description": "Arvis Check main window permissions",
   "windows": ["main"],
   "permissions": ["core:default", "dialog:allow-open"]
 }

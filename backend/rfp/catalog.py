@@ -63,6 +63,6 @@ def build_rfp_review_catalog(pages: list[tuple[int, str]], requirements: list[Sp
             if match:
                 name = _e(match.group(1))
                 qualitative.setdefault(name, {"name": name, "evaluation_method": "relative", "evidence": {"page": page, "bbox": None, "text": _e(line)}, "confidence": "medium", "review_required": True})
-    quantitative = [{"name": x.category or x.raw_requirement[:80], "source": "specification", "importance": x.importance, "condition": x.condition, "evidence": x.evidence.to_dict(), "confidence": x.confidence, "review_required": x.review_required} for x in requirements]
-    quantitative += [{"name": x.rule_type, "source": "evaluation_rule", "effect": x.effect, "value": x.value, "cap": x.cap, "evidence": x.evidence.to_dict(), "confidence": x.confidence, "review_required": x.review_required} for x in rules]
+    quantitative = [{"name": x.category or x.equipment_name or x.raw_requirement[:80], "source": "specification", "importance": x.importance, "condition": x.condition, "rfp_requirement": x.raw_requirement, "bonus_eligible": x.bonus_eligible, "evidence": x.evidence.to_dict(), "confidence": x.confidence, "review_required": x.review_required} for x in requirements]
+    quantitative += [{"name": x.rule_type, "source": "evaluation_rule", "rule_type": x.rule_type, "effect": x.effect, "value": x.value, "cap": x.cap, "condition_summary": x.condition_summary, "evidence": x.evidence.to_dict(), "confidence": x.confidence, "review_required": x.review_required} for x in rules]
     return {"required_documents": list(docs.values()), "quantitative_evaluation_items": quantitative, "qualitative_evaluation_items": list(qualitative.values())}

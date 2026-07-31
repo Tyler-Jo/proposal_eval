@@ -49,5 +49,5 @@ fn main() {
         .manage(BackendState(Mutex::new(None)))
         .invoke_handler(tauri::generate_handler![start_backend])
         .run(tauri::generate_context!())
-        .expect("error while running AVIS Check");
+        .expect("error while running Arvis Check");
 }

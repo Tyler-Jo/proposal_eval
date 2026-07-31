@@ -9,13 +9,17 @@ from .models import EvidenceLocation, SpecificationRequirement, SpecificationSou
 
 _BONUS_MARKER = re.compile(r"\[\s*상위\s*규격\s*제안\s*시\s*가점\s*\]")
 _NUMBER_UNIT = re.compile(
-    r"(?P<value>\d+(?:\.\d+)?)\s*(?P<unit>GHz|MHz|Core|GB|TB|Mbps|ms|시간|개월|대|개|식|포트|회|%)"
+    r"(?P<value>\d+(?:\.\d+)?)\s*(?P<unit>GHz|G㎐|MHz|Core|GB|TB|Mbps|ms|시간|개월|대|개|식|포트|회|%)"
 )
-_COMPARISON = re.compile(r"(?P<value>\d+(?:\.\d+)?)\s*(?P<unit>GHz|MHz|Core|GB|TB|Mbps|ms|시간|개월|대|개|식|포트|회|%)?\s*(?P<operator>이상|이하|미만|초과)")
+_COMPARISON = re.compile(r"(?P<value>\d+(?:\.\d+)?)\s*(?P<unit>GHz|G㎐|MHz|Core|GB|TB|Mbps|ms|시간|개월|대|개|식|포트|회|%)?\s*(?P<operator>이상|이하|미만|초과)")
 
 
 def _clean(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
+
+
+def _unit(unit: str) -> str:
+    return "GHz" if unit == "G㎐" else unit
 
 
 def _importance(text: str) -> tuple[str, str]:
@@ -39,10 +43,15 @@ def _needs_human_review(requirement: str, condition: dict[str, Any], importance:
 
 
 def _leaf_condition(text: str) -> dict[str, Any]:
+    values = [{"value": float(match.group("value")), "unit": _unit(match.group("unit"))} for match in _NUMBER_UNIT.finditer(text)]
+    trailing_operator = re.search(r"(이상|이하|미만|초과)(?:\s+\d+\s*개)?\s*$", text)
+    if len(values) > 1 and trailing_operator:
+        operator = {"이상": "gte", "이하": "lte", "미만": "lt", "초과": "gt"}[trailing_operator.group(1)]
+        return {"type": "all", "conditions": [{"type": "comparison", "operator": operator, "value": value["value"], "unit": value["unit"], "text": f'{value["value"]:g}{value["unit"]} {trailing_operator.group(1)}'} for value in values], "text": _clean(text)}
     comparison = _COMPARISON.search(text)
     if comparison:
         operator = {"이상": "gte", "이하": "lte", "미만": "lt", "초과": "gt"}[comparison.group("operator")]
-        unit = comparison.group("unit") or ""
+        unit = _unit(comparison.group("unit") or "")
         return {
             "type": "comparison",
             "operator": operator,
@@ -50,10 +59,6 @@ def _leaf_condition(text: str) -> dict[str, Any]:
             "unit": unit,
             "text": _clean(text),
         }
-    values = [
-        {"value": float(match.group("value")), "unit": match.group("unit")}
-        for match in _NUMBER_UNIT.finditer(text)
-    ]
     return {"type": "text", "text": _clean(text), "values": values}
 
 

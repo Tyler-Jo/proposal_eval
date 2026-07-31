@@ -31,3 +31,14 @@ def test_fallback_ocrs_empty_page_and_preserves_page_number(tmp_path, monkeypatc
     pages = extract_pdf_pages_with_ocr(str(path))
 
     assert pages == [type(pages[0])(page=1, text="필수 제출 서류", source="paddleocr")]
+
+
+def test_extraction_reports_page_progress(tmp_path, monkeypatch) -> None:
+    path = tmp_path / "scan.pdf"
+    _pdf(path)
+    monkeypatch.setattr("ocr._ocr_page", lambda *_: "텍스트")
+    progress = []
+
+    extract_pdf_pages_with_ocr(str(path), on_progress=lambda processed, total, ocr: progress.append((processed, total, ocr)))
+
+    assert progress == [(1, 1, 1)]

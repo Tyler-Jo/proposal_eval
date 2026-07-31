@@ -35,3 +35,22 @@ def test_05_rubric_score_comes_from_required_keywords() -> None:
 
     assert score_rubric([(2, "착수 계획"), (3, "완료 보고")], rubric)[0]["score"] == 20
     assert score_rubric([(2, "착수 계획")], rubric)[0]["status"] == "MISSING"
+
+
+def test_05_numeric_specification_keeps_rfp_and_proposal_values() -> None:
+    rubric = parse_rubric({"items": [{
+        "id": "cpu", "name": "CPU", "source": "specification", "importance": "required", "max_score": 10,
+        "required_keywords": ["CPU"], "rfp_requirement": "3.0GHz 10Core 이상",
+        "condition": {"type": "all", "conditions": [
+            {"type": "comparison", "operator": "gte", "value": 3.0, "unit": "GHz"},
+            {"type": "comparison", "operator": "gte", "value": 10.0, "unit": "Core"},
+        ]},
+    }]})
+
+    result = score_rubric([(7, "제안 CPU: 3.2GHz 8Core 적용")], rubric)[0]
+
+    assert result["status"] == "MISSING"
+    assert result["evidence_pages"] == [7]
+    assert result["comparison"]["rfp_requirement"] == "3.0GHz 10Core 이상"
+    assert result["comparison"]["proposed"] == "3.2GHz, 8Core"
+    assert "10Core 이상" in result["comparison"]["summary"]

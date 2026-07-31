@@ -22,3 +22,14 @@ def test_11_extracts_writing_deduction_cap() -> None:
     assert rules[0].rule_type == "writing_guideline_deduction_cap"
     assert rules[0].value == -3.5
     assert rules[0].cap == 3.5
+
+
+def test_11_accepts_ocr_spacing_and_parenthesized_deduction() -> None:
+    pages = [(12, "필수 항목 중 한 항목이라도 미 충족 시 불합격 판정한다. 일반 항목은 항목별 ‘미 충족’시 감점(-0.5점)을 적용한다.")]
+
+    rules = extract_evaluation_rules(pages)
+
+    assert {(rule.rule_type, rule.value) for rule in rules} == {
+        ("required_item_failure", None),
+        ("general_item_deduction", -0.5),
+    }
